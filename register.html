@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/997049d577.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<header class="top-header-register">
+    <div class="logoycomprar">
+        <img src="images/logo-mercado-liebre.svg" class="logoregister">
+        <h2>
+            <div class="compraencuotas"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta
+                de crédito</div>
+        </h2>
+    </div>
+</header>
+
+<body>
+    <div class="cajacelesteregistro"></div>
+    <div class="tituloregistro">
+        <h2 class="titulo">Completa tus datos</h2>
+    </div>
+    <form class="listadoregistro" action="./" method="GET">
+
+        <div>
+            <label for="nombre_apellido">Nombre y apellido</label><br>
+            <div>
+                <input class="ingresodato" type="text" id="nombre_apellido" name="nombre_apellido" required
+                    minlength="2">
+            </div>
+        </div>
+        <div>
+            <label for="nickname">Nombre de Usuario:</label><br>
+            <input class="ingresodato" type="text" id="nickname" name="nickname" required>
+        </div>
+        <div>
+            <label for="nacimiento">Fecha de Nacimiento:</label><br>
+            <input class="ingresodato" type="date" name="nacimiento">
+        </div>
+        <div>
+            <label for="domicilio">Domicilio:</label><br>
+            <input class="ingresodato" type="text" id="domicilio" name="domicilio">
+        </div>
+        <div>
+            <label for="perfil">Perfil de Usuario:</label><br>
+            <input type="radio" value="Vendedor" name="perfil"> Vendedor
+            <input type="radio" value="Comprador" name="perfil"> Comprador
+        </div>
+        <div>
+            <label for="intereses">Categorias de Interes:</label><br>
+            <input type="checkbox" value="Electro" name="Electro"> Electro
+            <input type="checkbox" value="Moda" name="Moda"> Moda
+            <input type="checkbox" value="Hogar" name="Hogar"> Hogar
+            <input type="checkbox" value="Jugueteria" name="Jugueteria"> Jugueteria
+            <input type="checkbox" value="Vida Sana" name="Vida Sana"> Vida Sana
+        </div>
+        <div>
+            <label class="fotodeusuario" for="fotousuario">Foto de Usuario:</label><br>
+            <input type="file" name="fotousuario" accept=".jpeg">
+        </div>
+        <div>
+            <label for="password">Contraseña:</label><br>
+            <input class="ingresodato" type="password" name="password">
+        </div>
+        <div>
+            <label for="password">Confirmar contraseña:</label><br>
+            <input class="ingresodato" type="password" name="password">
+        </div>
+
+        <div class="botonenviar">
+            <input type="submit" value="Enviar">
+        </div>
+        <div class="boton">
+            <input type="reset" value="Reestablecer">
+        </div>
+
+
+
+
+
+    </form>
+</body>
+<footer>
+    <div class="cajasfooter">
+        <section>
+            <div><i class="fa-solid fa-gift fa-2xl"></i></div>
+            <h4>Se reciben pagos en efectivo, con tarjeta o transferencias</h4>
+            <p>Con PSE, active el pago automatico. ¡Y siempre es seguro!</p>
+        </section>
+        <section>
+            <div><i class="fa-solid fa-gift fa-2xl"></i></div>
+            <h4>Envío a cualquier lugar del pais desde COP $ 15.000</h4>
+            <p>Al registarse como cliente fiel puede adquirir los productos incluido el envio.</p>
+        </section>
+        <section>
+            <div><i class="fa-solid fa-user-shield fa-2xl"></i></div>
+            <h4>Tejemos ilusiones</h4>
+            <p>Siempre a tu gusto, variedad de colores y diseños</p>
+        </section>
+    </div>
+    <h5>Copyright © 2023 Manualidades MariaCe</h5>
+</footer>
+
+</html>
